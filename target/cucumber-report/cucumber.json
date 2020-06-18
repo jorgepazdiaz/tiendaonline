@@ -1,0 +1,1038 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-17T01:40:47.120Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5984000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 58,
+        "name": "Agregar Registro",
+        "description": "",
+        "id": "agregar-un-nuevo-registro;agregar-registro;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 104000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5399000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "la web debe estar disponible",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.laWebDebeEstarDisponible()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2374000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Ingresa a Sign In",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.ingresaASignIn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Valido Pagina",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.validoPagina()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Ingreso Email EmailInicial \"4xxpruebita1@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4xxpruebita1@test.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresoEmailEmailInicial(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Dar click",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.darClick()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.xpath: //*[contains(text(),\u0027Your personal information\u0027)]\u0027 (tried for 30 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat PageObjects.FormularioPage.Verificar(FormularioPage.java:52)\r\n\tat Definitions.RegistroDefinitions.validarPaginaDelFormularioDeRegistro(RegistroDefinitions.java:61)\r\n\tat ✽.Validar Pagina del Formulario de Registro(file:///D:/Web%20Automation%20Curso%20-%20Selenium/TiendaOnline/src/test/resources/features/Registro.feature:30)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Your personal information\u0027)]\"}\n  (Session info: chrome\u003d83.0.4103.106)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027JORGEPAZ\u0027, ip: \u0027192.168.8.116\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\jpaz\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: cedfbb2da2af2d6371b2d88fdd2f9843\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Your personal information\u0027)]}\r\n\tat sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat PageObjects.FormularioPage.Verificar(FormularioPage.java:52)\r\n\tat Definitions.RegistroDefinitions.validarPaginaDelFormularioDeRegistro(RegistroDefinitions.java:61)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 30210000000,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "Validar Pagina del Formulario de Registro",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.validarPaginaDelFormularioDeRegistro()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Ingresar datos check \"mr.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mr.\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosCheck(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Ingresar datos nombre \"Erickson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Erickson\"",
+                  "offset": 22
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosNombre(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Ingresar datos apellido \"Paz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Paz\"",
+                  "offset": 24
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosApellido(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Ingresar datos email \"4xxpruebita1@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4xxpruebita1@test.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Ingresar datos password \"Micasa752@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Micasa752@\"",
+                  "offset": 24
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Ingresar datos dia \"30\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"30\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDia(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Ingresar datos mes \"Agosto\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Agosto\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosMes(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "Ingresar datos anio \"19888\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"19888\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosAnio(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Selecciona las notificaciones",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.seleccionaLasNotificaciones()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Ingresar datos de direccion nombreDir \"Erickson\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Erickson\"",
+                  "offset": 38
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionNombreDir(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "Ingresar datos de direccion apellidoDir \"Diaz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Diaz\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionApellidoDir(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "Ingresar datos de direccion compania \"pruebita\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pruebita\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionCompania(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "Ingresar datos de direccion direccion1 \"Mi casa 752\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mi casa 752\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionDireccion1(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "Ingresar datos de direccion direccion2 \"avenida no esta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"avenida no esta\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionDireccion2(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "Ingresar datos de direccion ciudad \"Central\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Central\"",
+                  "offset": 35
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionCiudad(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "Ingresar datos de direccion estado \"Alaska\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alaska\"",
+                  "offset": 35
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionEstado(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "Ingresar datos de direccion codigoPostal \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345\"",
+                  "offset": 41
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionCodigoPostal(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Ingresar datos de direccion Pais \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 33
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionPais(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "Ingresar datos de direccion InfoAdicional \"algo mas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"algo mas\"",
+                  "offset": 42
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionInfoAdicional(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "Ingresar datos de direccion Telefono \"935404484\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"935404484\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionTelefono(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "Ingresar datos de direccion Celular \"935404484\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"935404484\"",
+                  "offset": 36
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionCelular(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "Ingresar datos de direccion NombreDireccion \"Mi Casita\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mi Casita\"",
+                  "offset": 44
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionNombreDireccion(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "registrar cuenta",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.registrarCuenta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "Valiar Registro",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.valiarRegistro()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@pruebaReport"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-17T01:41:31.833Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5247000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 59,
+        "name": "Agregar Registro",
+        "description": "",
+        "id": "agregar-un-nuevo-registro;agregar-registro;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5423000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "la web debe estar disponible",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.laWebDebeEstarDisponible()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1966000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Ingresa a Sign In",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.ingresaASignIn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Valido Pagina",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.validoPagina()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Ingreso Email EmailInicial \"test111@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test111@test.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresoEmailEmailInicial(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Dar click",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.darClick()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.xpath: //*[contains(text(),\u0027Your personal information\u0027)]\u0027 (tried for 30 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat PageObjects.FormularioPage.Verificar(FormularioPage.java:52)\r\n\tat Definitions.RegistroDefinitions.validarPaginaDelFormularioDeRegistro(RegistroDefinitions.java:61)\r\n\tat ✽.Validar Pagina del Formulario de Registro(file:///D:/Web%20Automation%20Curso%20-%20Selenium/TiendaOnline/src/test/resources/features/Registro.feature:30)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Your personal information\u0027)]\"}\n  (Session info: chrome\u003d83.0.4103.106)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027JORGEPAZ\u0027, ip: \u0027192.168.8.116\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\jpaz\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 6c4e82b00ab5a2daf1315895093b2d3b\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Your personal information\u0027)]}\r\n\tat sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat PageObjects.FormularioPage.Verificar(FormularioPage.java:52)\r\n\tat Definitions.RegistroDefinitions.validarPaginaDelFormularioDeRegistro(RegistroDefinitions.java:61)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 30187000000,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "Validar Pagina del Formulario de Registro",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.validarPaginaDelFormularioDeRegistro()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Ingresar datos check \"mr.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mr.\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosCheck(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Ingresar datos nombre \"Pether\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pether\"",
+                  "offset": 22
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosNombre(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Ingresar datos apellido \"Paz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Paz\"",
+                  "offset": 24
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosApellido(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Ingresar datos email \"test111@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test111@test.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Ingresar datos password \"Micasa752@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Micasa752@\"",
+                  "offset": 24
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Ingresar datos dia \"22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"22\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDia(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Ingresar datos mes \"Noviembre\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Noviembre\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosMes(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "Ingresar datos anio \"1990\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1990\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosAnio(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Selecciona las notificaciones",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.seleccionaLasNotificaciones()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Ingresar datos de direccion nombreDir \"Helberth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Helberth\"",
+                  "offset": 38
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionNombreDir(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "Ingresar datos de direccion apellidoDir \"Paz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Paz\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionApellidoDir(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "Ingresar datos de direccion compania \"pruebita\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pruebita\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionCompania(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "Ingresar datos de direccion direccion1 \"Mi casa 752\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mi casa 752\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionDireccion1(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "Ingresar datos de direccion direccion2 \"avenida no esta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"avenida no esta\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionDireccion2(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "Ingresar datos de direccion ciudad \"Central\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Central\"",
+                  "offset": 35
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionCiudad(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "Ingresar datos de direccion estado \"Alaska\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alaska\"",
+                  "offset": 35
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionEstado(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "Ingresar datos de direccion codigoPostal \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345\"",
+                  "offset": 41
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionCodigoPostal(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Ingresar datos de direccion Pais \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 33
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionPais(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "Ingresar datos de direccion InfoAdicional \"algo mas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"algo mas\"",
+                  "offset": 42
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionInfoAdicional(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "Ingresar datos de direccion Telefono \"935404484\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"935404484\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionTelefono(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "Ingresar datos de direccion Celular \"935404484\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"935404484\"",
+                  "offset": 36
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionCelular(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "Ingresar datos de direccion NombreDireccion \"Mi Casita\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mi Casita\"",
+                  "offset": 44
+                }
+              ],
+              "location": "Definitions.RegistroDefinitions.ingresarDatosDeDireccionNombreDireccion(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "registrar cuenta",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.registrarCuenta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "Valiar Registro",
+            "match": {
+              "location": "Definitions.RegistroDefinitions.valiarRegistro()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@pruebaReport"
+          }
+        ]
+      }
+    ],
+    "name": "Agregar un nuevo registro",
+    "description": "  Yo como usuario\n  quiero agregar un nuevo registro\n  para poder comprar los productos",
+    "id": "agregar-un-nuevo-registro",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Registro.feature",
+    "tags": []
+  }
+]
